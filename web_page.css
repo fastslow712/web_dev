@@ -1,0 +1,23 @@
+body{
+    background-color: blue;
+    color: red;
+    text-align: center;
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+}
+#pitchure{
+    width: 300px;
+}
+h1{
+    font-family: sans-serif, "Times New Roman";
+}
+h3{
+    font-family: sans-serif, "Times New Roman";
+}
+p{
+    font-family: "Times New Roman", sans-serif;
+}
+#list{
+    text-align: left;
+}
