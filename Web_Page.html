@@ -6,8 +6,21 @@
         <meta charset="UTF-8">
         <title>Skyward Sword</title>
         <link rel="stylesheet" href="web_page.css">
-
-        </style>
+        <script>
+            not = 1
+            function show(){
+                if(not == 1){
+                document.getElemontById("button").innerHTML = "show less"
+                document.getElemontById("hiden").style.display = "block"  
+                not -=1
+                }else{
+                document.getElemontById("button").innerHTML = "show more"
+                document.getElemontById("hiden").style.display = "show"  
+                not +=1
+                }
+            }
+            
+        </script>
     </head>
     <body>
         <div>
@@ -15,7 +28,7 @@
         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSli-Y48leXK_Lnh78yGBjf7ViX50eKYuvnUicbFx36NSnYKZig" alt="Skyward Sword case cover" id="pitchure"/>
         </div>
         <div>
-        <img src="https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg"alt="Loftwings" id="pitchure"/>
+        <img src="https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg" alt="Loftwings" id="pitchure"/>
         </div>
         <div>
         <h3>History</h3>
@@ -35,12 +48,20 @@
             <li>Skyloft</li>
             <li>Sealed Grounds</li>
             <li>Faron woods</li>
-            <li>eldin vocano</li>
-            <li>Lanayru desert.</li>
+            <li>Eldin vocano</li>
+            <li>Lanayru desert</li>
         </ol>
         </div>
         <div>
         <a href="https://www.cgmagonline.com/review/game/zelda-skyward-sword-hd-review/">Link</a>
+        <button onclick={} id="button"></button>
+        </div>
+        <div id="hiden">
+            <h3>j;ksf</h3>
+            <p>
+                ajsfdlksfjl;safd
+            </p>
+            <img scr="" alt="undesided" id="pitchure">
         </div>
     </body>
 </html>
