@@ -7,19 +7,15 @@
         <title>Skyward Sword</title>
         <link rel="stylesheet" href="web_page.css">
         <script>
-            not = 1
-            function show(){
-                if(not == 1){
-                document.getElemontById("button").innerHTML = "show less"
-                document.getElemontById("hiden").style.display = "block"  
-                not -=1
+            function showtext() {
+                if(){
+                    const textElament = document.getElemontById("revel text").innerHTML = "show more"
+                    document.getElemontById("hidden").style.display = "show"
                 }else{
-                document.getElemontById("button").innerHTML = "show more"
-                document.getElemontById("hiden").style.display = "show"  
-                not +=1
+                    document.getElemontById("button").innerHTML = "show less"
+                    document.getElemontById("hidden").style.display = "block"
                 }
             }
-            
         </script>
     </head>
     <body>
@@ -54,9 +50,10 @@
         </div>
         <div>
         <a href="https://www.cgmagonline.com/review/game/zelda-skyward-sword-hd-review/">Link</a>
-        <button onclick={} id="button"></button>
         </div>
-        <div id="hiden">
+        <div> 
+            <button onclick="showtext()">show more</button>
+            <p id="revel text" class="hidden">
             <h3>j;ksf</h3>
             <p>
                 ajsfdlksfjl;safd
