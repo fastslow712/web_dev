@@ -7,13 +7,26 @@
         <title>Skyward Sword</title>
         <link rel="stylesheet" href="web_page.css">
         <script>
+            not = 1
             function showtext() {
-                if(){
-                    const textElament = document.getElemontById("revel text").innerHTML = "show more"
-                    document.getElemontById("hidden").style.display = "show"
+                if (not == 1){
+                    document.getElementById("button").innerHTML = "show less"
+                    document.getElementById("revel_text").style.display = "block"
+                    not=0
                 }else{
-                    document.getElemontById("button").innerHTML = "show less"
-                    document.getElemontById("hidden").style.display = "block"
+                    document.getElementById("button").innerHTML = "show more"
+                    document.getElementById("revel_text").style.display = "none"
+                    not=1
+                }
+            }
+            image_number=1
+            function changeimage(){
+                if (image_number == 1){
+                    document.getElementById("pitchure_2").innerHTML = "https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg"
+                    image_number=2
+                }else{
+                    document.getElementById("pitchure_2").innerHTML = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSli-Y48leXK_Lnh78yGBjf7ViX50eKYuvnUicbFx36NSnYKZig"
+                    image_number=1
                 }
             }
         </script>
@@ -21,10 +34,10 @@
     <body>
         <div>
         <h1>Skyward Sword</h1>
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSli-Y48leXK_Lnh78yGBjf7ViX50eKYuvnUicbFx36NSnYKZig" alt="Skyward Sword case cover" id="pitchure"/>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSli-Y48leXK_Lnh78yGBjf7ViX50eKYuvnUicbFx36NSnYKZig" alt="Skyward Sword case cover" id="pitchure_1"/>
         </div>
         <div>
-        <img src="https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg" alt="Loftwings" id="pitchure"/>
+        <img  src="https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg" alt="changing" onemouseover={changeimage()} id="pitchure_2"/>
         </div>
         <div>
         <h3>History</h3>
@@ -50,10 +63,10 @@
         </div>
         <div>
         <a href="https://www.cgmagonline.com/review/game/zelda-skyward-sword-hd-review/">Link</a>
+        <button id="button" onclick={showtext()}>show more</button>
         </div>
-        <div> 
-            <button onclick="showtext()">show more</button>
-            <p id="revel text" class="hidden">
+        <div id="revel_text"> 
+            
             <h3>j;ksf</h3>
             <p>
                 ajsfdlksfjl;safd
