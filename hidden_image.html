@@ -3,28 +3,35 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>minecraft</title>
         <script>
             function showimage(){
-                document.getElementById("hidden_image").style.display = "none"
+                document.getElementById("hidden_image").style.display = "block"
             }
             function hideimage(){
-                document.getElementById("hidden_image").style.display = "block"
+                document.getElementById("hidden_image").style.display = "none"
+            }
+            function imagehide(){
+                document.getElementById("hidden_image").style.display = "none"
             }
         </script>
     </head>
     <body>
-        <h1>undecided</h1>
+        <h1>mincraft</h1>
         <p>
-            undecided
+            Minecraft is a game encourage people to use there creativity. there are so many types of structures that you can build and you can use so many different materials to build those buildings. In addition to the verity they way that you can build it come in often two different styles. One is creative were you have unlimited resources and you can build with no danger and no delays outside the time it takes to lay down the different bricks. the other is called survival mode. This mode requires you to gather your resources and survive monsters.
         </p>
         <p>
-
+            Minecraft also present other challenges which includes fighting different types of monsters. Finding basic resources to make more diffitucult resources. You can cook to make food, or brew to make potions. You can make different strength weapons and armor as well.  In addition to this you can also play by your self or with others in the world.
         </p>
-        <img scr="" alt="undecided"/>
+        <img id="pitchure" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Minecraft_2024_cover_art.png/250px-Minecraft_2024_cover_art.png" alt="mincraft">
         <ol>
-            <Li onmouseover="hideimage()" onmouseout="showimage()">undecided</Li>
+            <Li>crafting table</Li>
+            <li>furnice</li>
+            <li>brewing stand</li>
+            <li>anvil</li>
         </ol>
-        <img scr="" alt="undecided" id="hidden_image"/>
+        <div onmouseover="showimage()" onmouseout="hideimage()">hover for image</div>
+        <img id="hidden_image" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b7/Crafting_Table_JE4_BE3.png/revision/latest/thumbnail/width/360/height/360?cb=20191229083528" alt="undecided"/>
     </body>
 </html>
