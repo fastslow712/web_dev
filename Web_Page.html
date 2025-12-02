@@ -1,5 +1,5 @@
 <!--ah HTML web page-->
-<!--this is about a video game.-->
+<!--this is about a video game-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,15 +19,11 @@
                     not=1
                 }
             }
-            image_number=1
             function changeimage(){
-                if (image_number == 1){
-                    document.getElementById("pitchure_2").innerHTML = "https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg"
-                    image_number=2
-                }else{
-                    document.getElementById("pitchure_2").innerHTML = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSli-Y48leXK_Lnh78yGBjf7ViX50eKYuvnUicbFx36NSnYKZig"
-                    image_number=1
-                }
+                    document.getElementById("pitchure_2").src = "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2021/03/Skyward-Sword-Princess-Zelda-1.jpg?q=50&fit=crop&w=1600&h=900&dpr=1.5"
+            }
+            function changeimageback(){
+                    document.getElementById("pitchure_2").src = "https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg"
             }
         </script>
     </head>
@@ -37,7 +33,7 @@
         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSli-Y48leXK_Lnh78yGBjf7ViX50eKYuvnUicbFx36NSnYKZig" alt="Skyward Sword case cover" id="pitchure_1"/>
         </div>
         <div>
-        <img  src="https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg" alt="changing" onemouseover={changeimage()} id="pitchure_2"/>
+        <img  src="https://cdn.cgmagonline.com/wp-content/uploads/2021/07/news-the-legend-of-zelda-skyward-sword-hd-review.jpg" alt="changing" onmouseover="changeimage()" onmouseout="changeimageback()" id="pitchure_2"/>
         </div>
         <div>
         <h3>History</h3>
@@ -65,13 +61,12 @@
         <a href="https://www.cgmagonline.com/review/game/zelda-skyward-sword-hd-review/">Link</a>
         <button id="button" onclick={showtext()}>show more</button>
         </div>
-        <div id="revel_text"> 
-            
-            <h3>j;ksf</h3>
+        <div id="revel_text">
+            <img id="pitchure_3" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Master_Sword_Lead.png/250px-Master_Sword_Lead.png" alt="Mastersword">
+            <h3>swords</h3>
             <p>
-                ajsfdlksfjl;safd
+                Over the corse of the adventure links sword changes. The first sword link gets is the practice sword, it is a sword for practice. Next is the skyward sword, it is a sword that when ponted skyward can do a skyward strike. The next is the skyward longsword, it is the skyward sword but magically enhanced. The next sword is the skyward white sword, it is the skyward sword after being enhanced again. The next upgrade of the skyward sword is the master sword, the skyward sword true form. The true master sword is the most powerfull weapon in the game, the true master sword looks more like what most people think of when they think of the master sword. it is the last sword you get. 
             </p>
-            <img scr="" alt="undesided" id="pitchure">
         </div>
     </body>
 </html>
