@@ -3,26 +3,57 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>capital reaf natinal park</title>
+        <title>a</title>
+        <link rel="stylesheet" href="Staycation_Project.css">
         <script>
-            function changeimage{
-                
+            function changeimage(){
+                document.getElementById("changing_pithure").src=""
             }
-
+            function changeimageback(){
+                document.getElementById("changing_pitchure").src=""
+            }
+            status=1
+            function hidetext(){
+                if (status==1){
+                    document.getElementById("button").innerhtml = "show less"
+                    document.getElementById("hidden_text").style.display = "block"
+                    status=0
+                }else{
+                    document.getElementById("button").innerhtml = "show more"
+                    document.getElementById("hidden_text").style.display = "none"
+                    status=1
+                }
+            }
         </script>
     </head>
     <body>
-        <h1>b</h1>
+        <div>
+        <h1>a</h1>
+        <img src="" alt="undecided" id="pitchure">
+        <img src="" alt="undecided" id="pitchure">
+        </div>
+        <div>
+        <img src="" alt="undecided" id="pitchure">
+        <img src="" alt="undecided" id="changing_pithure" onmouseover="changeimage()" onmouseout="changeimageback()">
+        </div>
+        <div>
         <p>
             c
         </p>
-        <img src="" alt="undecided" id="pitchure">
-        <img src="" alt="undecided" id="pitchure">
-        <img src="" alt="undecided" id="pitchure">
-        <img src="" alt="undecided" id="changing_pithure">
+        </div>
+        <div>
         <ol>
             <li>d</li>
         </ol>
-
+        </div>
+        <div>
+            <button id="button" onclick="hidetext()">show more</button>
+        </div>
+        <div id="hidden_text">
+            <hl>e</hl>
+            <p>
+                f
+            </p>
+        </div>
     </body>
 </html>
