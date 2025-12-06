@@ -1,11 +1,30 @@
 body{
-    background-color: blue;
-    color: red;
+    background-color: rgb(81, 81, 255);
+    color: rgb(80, 0, 0);
     text-align: center;
     display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    font-family: sans-serif;
 }
-ol{
-    text-align: left;
+ul{
+    background-color: green;
+    color: black;
+    padding: 15px 75px;
+}
+div{
+    padding: 15px 75px;
+}
+#pitchure{
+    width: 300px;
+    margin: 20px;
+}
+#changing_pithure{
+    width: 600px;
+}
+h1{
+    font-family: impact;
+}
+h4{
+    font-family: impact;
 }
